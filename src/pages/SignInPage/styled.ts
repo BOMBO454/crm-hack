@@ -1,12 +1,12 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { ORANGE } from "../../constants/variables";
 import Back from "../../images/Back.jpg";
 
-export const LogoWrapper = styled.div`
+export const LogoWrapper = styled(motion.div)`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   height: 450px;
   width: 800px;
   svg {
@@ -17,7 +17,7 @@ export const LogoWrapper = styled.div`
     }
   }
 `;
-export const SignInPageContainer = styled.div`
+export const SignInPageContainer = styled(motion.div)`
   position: relative;
   height: 100vh;
   display: flex;

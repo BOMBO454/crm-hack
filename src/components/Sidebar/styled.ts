@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { GLASS_MIXIN } from "../../constants/variables";
 
-export const SidebarWrapper = styled.div`
+export const SidebarWrapper = styled(motion.div)`
   ${GLASS_MIXIN};
   display: flex;
   flex-direction: column;

@@ -8,8 +8,10 @@ const SignInCard: React.FC = () => {
   const history = useHistory();
   return (
     <SignInCardContainer
-      initial={{ y: "-60%", x: "-50%" }}
-      animate={{ y: "-50%", x: "-50%" }}
+      initial={{ opacity: 0, y: "-60%", x: "-50%" }}
+      animate={{ opacity: 1, y: "-50%", x: "-50%" }}
+      exit={{ opacity: 0 }}
+      transition={{ ease: "easeInOut" }}
     >
       <InputField title="логин" />
       <InputField title="пароль" type="password" />

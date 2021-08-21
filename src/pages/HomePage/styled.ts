@@ -1,7 +1,21 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import Back from "../../images/Back.jpg";
+import { GLASS_MIXIN } from "../../constants/variables";
 
-export const SignInPageContainer = styled.div`
+export const HomePageModulWrapper = styled(motion.div)`
+  ${GLASS_MIXIN};
+  width: 80%;
+  height: calc(100vh - 120px);
+  border-radius: 32px;
+`;
+export const HomePageMain = styled.div`
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+`;
+export const SignInPageContainer = styled(motion.div)`
   position: relative;
   height: 100vh;
   display: flex;
