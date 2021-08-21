@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ORANGE } from "../../constants/variables";
+import Back from "../../images/Back.jpg";
 
 export const LogoWrapper = styled.div`
   position: absolute;
@@ -22,4 +23,8 @@ export const SignInPageContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(${Back});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
