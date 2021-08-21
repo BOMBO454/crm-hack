@@ -1,11 +1,12 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { useState } from "react";
 import ReactFlow, { removeElements, addEdge } from "react-flow-renderer";
+import { EventNode } from "../../../../components/Events/Event";
 
 const initialElements = [
   {
     id: "1",
-    type: "input",
+    type: "event",
     data: { label: "Звонок клиента" },
     position: { x: 250, y: 25 },
   },
@@ -35,6 +36,7 @@ const AutoFlow: React.FC = () => {
   return (
     <ReactFlow
       elements={elements}
+      nodeTypes={{ event: EventNode }}
       onElementsRemove={onElementsRemove}
       onConnect={onConnect}
       deleteKeyCode={46} /* 'delete'-key */

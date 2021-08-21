@@ -3,6 +3,7 @@ import ReactFlow from "react-flow-renderer";
 import { ReactComponent as Add } from "../../../../images/icons/add.svg";
 import IconButton from "../../../../components/IconButton/IconButton";
 import AutoFlow from "../AutoFlow/AutoFlow";
+import Event from "../../../../components/Events/Event";
 import {
   HeaderBar,
   OrderBody,
@@ -24,7 +25,13 @@ const AtomizationLineView: React.FC = () => {
         <LeftSide>
           <AutoFlow />
         </LeftSide>
-        <RightSide>fsdf</RightSide>
+        <RightSide>
+          <h2>События</h2>
+          <Event>Звонок клиета</Event>
+          <Event>Жалоба</Event>
+          <Event>Заявка</Event>
+          <h2>Развилки</h2>
+        </RightSide>
       </OrderBody>
     </AtomizationLineWrapper>
   );

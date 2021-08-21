@@ -1,6 +1,7 @@
 import { css } from "styled-components";
 
 export const ORANGE = "#FEDA03";
+export const RED = "#D90404";
 export const ORANGE_DARK = "#A68524";
 export const GRAY_LIGHT = "#F2F2F2";
 export const WHITE = "#FFFFFF";
