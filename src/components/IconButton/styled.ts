@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import { BLACK, fontSize, TRANSITION, WHITE } from "../../constants/variables";
 
-export const Btn = styled.button`
+export const IconBtn = styled.button`
   display: block;
   border: 1px solid rgba(0, 0, 0, 0.12);
   background-color: ${WHITE};
   height: 30px;
-  border-radius: 8px;
-  width: 100%;
-  padding-left: 8px;
+  width: 30px;
+  border-radius: 15px;
   font-size: ${fontSize(16)};
   font-weight: bold;
   color: ${BLACK};

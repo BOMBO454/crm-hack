@@ -1,9 +1,10 @@
 import React from "react";
-import { HeaderBar } from "./styled";
+import OrderItem from "../OrderItem/OrderItem";
+import { HeaderBar, OrderBody, OrdersWrapper } from "./styled";
 
 const Orders: React.FC = () => {
   return (
-    <div>
+    <OrdersWrapper>
       <HeaderBar>
         <li>Заказы</li>
         <li>Клиенты</li>
@@ -11,7 +12,14 @@ const Orders: React.FC = () => {
         <li>Менеджеры</li>
         <li>Финансы</li>
       </HeaderBar>
-    </div>
+      <OrderBody>
+        <table>
+          {[1, 2, 3, 4, 5].map((item, i) => (
+            <OrderItem key={i} id={i} />
+          ))}
+        </table>
+      </OrderBody>
+    </OrdersWrapper>
   );
 };
 

@@ -17,7 +17,7 @@ const SignInCard: React.FC = () => {
       <InputField title="пароль" type="password" />
       <Button
         onClick={() => {
-          history.push("/home");
+          history.push("/home/orders");
         }}
       >
         Войти

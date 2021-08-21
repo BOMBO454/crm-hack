@@ -8,6 +8,8 @@ export const HomePageModulWrapper = styled(motion.div)`
   width: 80%;
   height: calc(100vh - 120px);
   border-radius: 32px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
 `;
 export const HomePageMain = styled.div`
   flex: 1 1 100%;

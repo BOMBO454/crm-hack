@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Sidebar from "../../components/Sidebar/Sidebar";
 import {
@@ -8,6 +8,9 @@ import {
   SignInPageContainer,
 } from "./styled";
 import Orders from "./components/Orders/Orders";
+import Connection from "./components/Connection/Connection";
+import AtomizationLine from "./components/AtomizationLine/AtomizationLine";
+import AtomizationLineView from "./components/AtomizationLineView/AtomizationLineView";
 
 const HomePage: React.FC<{ key?: string }> = ({ key }) => {
   return (
@@ -23,7 +26,15 @@ const HomePage: React.FC<{ key?: string }> = ({ key }) => {
           <Route path="/home/orders">
             <Orders />
           </Route>
-          <Route path="/home/clients">div</Route>
+          <Route path="/home/connection">
+            <Connection />
+          </Route>
+          <Route path="/home/atomization">
+            <AtomizationLine />
+          </Route>
+          <Route path="/home/atomization-edit">
+            <AtomizationLineView />
+          </Route>
         </HomePageModulWrapper>
       </HomePageMain>
     </SignInPageContainer>

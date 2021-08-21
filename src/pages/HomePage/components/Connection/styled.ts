@@ -2,10 +2,17 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { BLACK_LIGHT, WHITE } from "../../../../constants/variables";
 
-export const OrderBody = styled(motion.div)`
-  padding: 32px;
+export const LeftSide = styled(motion.div)``;
+export const RightSide = styled(motion.div)`
   display: flex;
   flex-direction: column;
+  padding: 0 16px;
+  gap: 16px;
+`;
+export const ConnectionBody = styled(motion.div)`
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
   width: 100%;
 `;
 export const HeaderBar = styled.ul`
@@ -22,6 +29,6 @@ export const HeaderBar = styled.ul`
     font-weight: bold;
   }
 `;
-export const OrdersWrapper = styled.div`
+export const ConnectionWrapper = styled.div`
   height: 100%;
 `;
